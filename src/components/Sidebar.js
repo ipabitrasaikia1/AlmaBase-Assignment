@@ -5,7 +5,10 @@ const Sidebar = () => {
     event.dataTransfer.setData('text/plain', elementType);
   };
 
-  return (
+  return (<div>
+    <div className='blocks'>
+     Blocks
+    </div>
     <div className="sidebar">
       <div
         className="sidebar-element"
@@ -29,6 +32,8 @@ const Sidebar = () => {
         Button
       </div>
     </div>
+  </div>
+  
   );
 };
 

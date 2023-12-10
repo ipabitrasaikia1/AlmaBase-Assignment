@@ -32,7 +32,7 @@ const ConfigModal = ({ element, onUpdate, onDelete, setShowModal }) => {
           <label>Text:</label>
           <input
             type="text"
-            value={config.text ?  config.text : setConfig({ ...config, text: "This is a "+element.type  })}
+            value={config.text ?  config.text : setConfig({ ...config, text: element.type  })}
             onChange={(e) => setConfig({ ...config, text: e.target.value  })}
           />
           <label>X:</label>

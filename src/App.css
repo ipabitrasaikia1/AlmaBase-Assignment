@@ -14,6 +14,14 @@
   padding: 8px;
   background-color: #ffffff;
   cursor: grab;
+  border-radius: 2px;
+}
+.blocks{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .sidebar-drop-area {
@@ -37,13 +45,24 @@
   background-color: #eee;
   box-sizing: border-box;
   cursor: grab;
+  border-radius: 2px;
 }
 .input-element {
    width: 300px;
 }
 
-.page-element.selected {
+.page-element.selected  {
   border-color: red;
+} 
+.indicator {
+  font-size: x-small;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  background-color: rgb(37, 37, 255);
+  color: white;
 }
 
 .config-modal {
@@ -111,6 +130,10 @@
     height: 100vh;
   }
   .page{
-    overflow: wrap;
+    overflow: scroll;
+  }
+  .blocks{
+    text-align: center;
+    padding-bottom: 8px;
   }
 }
