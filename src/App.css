@@ -1,0 +1,116 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background-color: #000000;
+}
+
+.sidebar-element {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #ffffff;
+  cursor: grab;
+}
+
+.sidebar-drop-area {
+  margin-top: 16px;
+  padding: 8px;
+  background-color: #ddd;
+}
+
+.page {
+  flex: 1;
+  position: relative;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+.page-element {
+  position: absolute;
+  padding: 8px;
+  border: 1px solid #333;
+  background-color: #eee;
+  box-sizing: border-box;
+  cursor: grab;
+}
+.input-element {
+   width: 300px;
+}
+
+.page-element.selected {
+  border-color: red;
+}
+
+.config-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 6px;
+}
+.config-modal-input {
+  display: flex;
+  flex-direction: column;
+}
+.config-modal-input > input {
+  height: 32px;
+  border: .5px solid slategray;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.config-modal-input > button {
+  background-color: blue;
+  width: 30%;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.backDrop {
+  background-color: #969696;
+  height: 100vh;
+  width: 100vw;
+  opacity: .8;
+  z-index: 100;
+  position: absolute;
+}
+
+.edit-lebel{
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .sidebar{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .sidebar-element {
+    margin: 2px;
+    background-color: #ddd;
+    height: 25px;
+    border-radius: 3px;
+  }
+  .app-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+  .page{
+    overflow: wrap;
+  }
+}
