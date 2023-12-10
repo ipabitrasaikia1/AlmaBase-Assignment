@@ -7,7 +7,7 @@ const Sidebar = () => {
 
   return (<div>
     <div className='blocks'>
-     Blocks
+     BLOCKS
     </div>
     <div className="sidebar">
       <div
@@ -15,21 +15,21 @@ const Sidebar = () => {
         draggable
         onDragStart={(e) => handleDragStart(e, 'label')}
       >
-        Label
+       🔗 Label
       </div>
       <div
         className="sidebar-element"
         draggable
         onDragStart={(e) => handleDragStart(e, 'input')}
       >
-        Input
+       🔗 Input
       </div>
       <div
         className="sidebar-element"
         draggable
         onDragStart={(e) => handleDragStart(e, 'button')}
       >
-        Button
+       🔗 Button
       </div>
     </div>
   </div>
